@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "type": "module",
   "main": "index.js",
-    "engines": {
+  "engines": {
     "node": "22.x"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon src/server.js ",
-    "server": "nodemon src/server.js"
+    "start": "node --max-http-header-size=32768 src/server.js",
+    "dev": "nodemon --max-http-header-size=32768 src/server.js",
+    "server": "nodemon --max-http-header-size=32768 src/server.js"
   },
   "keywords": [],
   "author": "",
@@ -23,10 +24,12 @@
     "express": "^5.1.0",
     "fs": "^0.0.1-security",
     "multer": "^2.0.2",
+    "nfewizard-io": "^0.5.45",
     "node-sped-nfe": "^1.2.44",
     "nodemon": "^3.1.10",
     "os": "^0.1.2",
     "path": "^0.12.7",
+    "typescript": "^5.9.3",
     "xlsx": "^0.18.5"
   }
 }

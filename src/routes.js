@@ -9,6 +9,6 @@ routes.get('/', (req, res) => {
 });
 
 
-routes.get('/validarConsulta', ConsultaNfeController.validarConsultar);
+routes.get('/validarConsulta', ConsultaNfeController.validarConsultarNfeWizard);
 
 export default routes;
